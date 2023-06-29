@@ -1,0 +1,101 @@
+.heropage {
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__input-box {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__link-2 {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  &__cta {
+    margin-bottom: 5rem;
+  }
+}
+
+.header {
+  &__logo {
+    margin: 0 auto;
+
+    & img {
+      margin-left: 2.5rem;
+    }
+  }
+
+  &__nav {
+    gap: 2rem;
+    display: none;
+
+    .link--active {
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+  &__menu {
+    margin-bottom: 10px;
+
+    &-link {
+      display: none;
+    }
+  }
+}
+
+.feature {
+  &__bkcontainer {
+    max-width: 37.5rem;
+    margin: 0 auto;
+  }
+}
+
+.testimonial {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(56rem / 16);
+  }
+
+  &__text {
+    text-align: center;
+    font-size: calc(19rem / 16);
+    line-height: 1.5;
+  }
+
+  &__user-name {
+    font-size: calc(17rem / 16);
+  }
+}
+
+.footer {
+  .sline {
+    height: 15rem;
+    width: 2px;
+    margin: 2rem auto;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  &__input {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__legal {
+    margin-top: 8rem;
+  }
+
+  .legal__nav span {
+    margin-inline: 5px;
+  }
+
+  .link-2-md {
+    font-size: calc(14rem / 16);
+    border: none;
+  }
+}

@@ -1,0 +1,72 @@
+.heropage {
+  background-image: url(../Starlink-imgs/heropage-1.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  padding-block: 1.25rem;
+  align-items: center;
+}
+
+.feature-bkimg {
+  background-image: url(../Starlink-imgs/feature-4.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial {
+  text-align: center;
+  background-color: #272626;
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  z-index: 15;
+  overflow-y: scroll;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__link {
+    padding-block: 0.9rem;
+
+    &-2 {
+      padding-block: 1.5rem;
+      border-block: 1px solid rgba(255, 255, 255, 0.25);
+    }
+  }
+}
+
+.bk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 100vh;
+  width: 100%;
+  z-index: 14;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+
+  &__active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,100 @@
+@media only screen and (min-width: 34.375em) {
+  .slider {
+    width: 16rem;
+    padding-block: 5rem 2rem;
+
+    &__logo {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 56.25em) {
+  .heropage {
+    background-image: url(../Starlink-imgs/heropage-2.webp);
+
+    .input {
+      flex: 1 1 65%;
+    }
+
+    .input--btn {
+      flex: 1 1 30%;
+    }
+  }
+
+  .feature {
+    &-bkimg {
+      display: flex;
+    }
+
+    &__bkcontainer {
+      align-self: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+  .testimonial__container {
+    margin-block: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .header {
+    align-items: center;
+    justify-content: space-between;
+
+    &__nav {
+      display: flex;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+
+    &__menu-link {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  .starlink__logo {
+    display: block;
+  }
+
+  .space-x__logo {
+    display: none;
+  }
+
+  .feature {
+    &__box {
+      display: flex;
+    }
+
+    &__imgs {
+      flex: 0 0 50%;
+
+      &-2 {
+        order: 2;
+      }
+
+      & img {
+        aspect-ratio: 2/2;
+      }
+    }
+
+    &__text {
+      align-self: center;
+      flex: 0 0 50%;
+    }
+
+    &__bkcontainer {
+      padding-inline: 8rem;
+      margin: 0;
+      margin-right: auto;
+    }
+  }
+}
